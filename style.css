@@ -1,0 +1,130 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(0, 0%, 8%);
+  font-family: 'Inter', sans-serif;
+}
+
+.container{
+  width: 500px;
+  height: 600px;
+  max-width: 400px;
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+
+}
+
+.avatar{
+  width: 120px;
+  border-radius: 50%;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-details{
+  text-align: center;
+  padding: .8rem;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.text{
+  width: 100%;
+  margin: auto;
+}
+
+.text span{
+  font-size: 1.4rem;
+  color: hsl(75, 94%, 57%);
+}
+
+.text h2{
+  color: white;
+
+}
+
+.text p{
+  font-size: 16px;
+  padding-top: 13px;
+  color: hsl(0, 0%, 100%);
+}
+
+.card{
+  border-radius: 5px;
+  text-transform: capitalize;
+  width: 300px;
+  height: 40px;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin: 15px;
+}
+
+.card:hover{
+  transition: .2s;
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(75, 94%, 57%);
+}
+
+.card span{
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+@media(max-width: 375px){
+  .container{
+    width: 300px;
+    height: 550px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  
+  }
+  
+  .avatar{
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .text h2{
+    font-size: 1.7rem;
+  }
+   
+  .text span{
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .text p{
+    font-size: 16px;
+  }
+  
+  .card{
+    width: 250px;
+    height: 40px;
+    margin: 15px;
+  } 
+}
+  
+
